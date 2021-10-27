@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <div>
+    <div className="home">
       <h2>welcome to the math Magicians website</h2>
       <p>
         Whether we love them or hate them, calculators are here to stay—gone are

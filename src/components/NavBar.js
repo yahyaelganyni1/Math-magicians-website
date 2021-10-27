@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   return (
-    <nav>
+    <nav className="nav-bar">
       <h1>Math Magicians</h1>
       <ul>
         <li>
