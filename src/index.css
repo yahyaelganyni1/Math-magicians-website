@@ -73,8 +73,12 @@ input {
   text-decoration: none;
 }
 
-.nav-bar Link::visited {
-  color: rgb(0, 0, 0);
+.nav-bar a {
+  text-decoration: none;
+}
+
+.nav-bar a:visited {
+  color: #f59300;
 }
 
 .quote {
