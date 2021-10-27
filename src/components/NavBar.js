@@ -5,9 +5,15 @@ export default function NavBar() {
     <nav>
       <h1>Math Magicians</h1>
       <ul>
-        <Link to="/">Home</Link>
-        <Link to="/Calculator">Calculator</Link>
-        <Link to="/">Quote</Link>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/Calculator">Calculator</Link>
+        </li>
+        <li>
+          <Link to="/Quote">Quote</Link>
+        </li>
       </ul>
     </nav>
   );
