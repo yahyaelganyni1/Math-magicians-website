@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 function NavBar() {
   return (
-    <nav className="nav-bar">
+    <header className="nav-bar">
       <h1>Math Magicians</h1>
       <ul>
         <li>
@@ -16,7 +16,7 @@ function NavBar() {
           <Link to="/Quote">Quote</Link>
         </li>
       </ul>
-    </nav>
+    </header>
   );
 }
 
