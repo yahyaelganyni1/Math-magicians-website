@@ -59,4 +59,35 @@ describe('Quick maths', () => {
       operation: null,
     });
   });
+
+  test('1 % 1 = 0', () => {
+    let data = {};
+
+    data = { ...data, ...calculator(data, '1') };
+    data = { ...data, ...calculator(data, '%') };
+    data = { ...data, ...calculator(data, '1') };
+    data = { ...data, ...calculator(data, '=') };
+
+    expect(data).toEqual({
+      total: '0',
+      next: null,
+      operation: null,
+    });
+  });
+
+  test('-2 + 2 = 0', () => {
+    let data = {};
+
+    data = { ...data, ...calculator(data, '2') };
+    data = { ...data, ...calculator(data, '+/-') };
+    data = { ...data, ...calculator(data, '+') };
+    data = { ...data, ...calculator(data, '2') };
+    data = { ...data, ...calculator(data, '=') };
+
+    expect(data).toEqual({
+      total: '0',
+      next: null,
+      operation: null,
+    });
+  });
 });
