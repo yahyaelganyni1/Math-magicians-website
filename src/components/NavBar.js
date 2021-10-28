@@ -1,6 +1,7 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function NavBar() {
+function NavBar() {
   return (
     <nav className="nav-bar">
       <h1>Math Magicians</h1>
@@ -18,3 +19,5 @@ export default function NavBar() {
     </nav>
   );
 }
+
+export default NavBar;
